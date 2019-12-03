@@ -3,6 +3,7 @@ package puzzleTwo
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 import org.amshove.kluent.*
+import kotlin.math.exp
 
 class PuzzleTwoAnswerTest : Spek({
     describe("Puzzle Two Answers") {
@@ -36,5 +37,18 @@ class PuzzleTwoAnswerTest : Spek({
                 }
             }
         }
+
+        describe("Part Two Example") {
+            it("Should return the example answer") {
+                val noun = 12
+                val verb = 2
+
+                val result = 100 * noun + verb
+                val expected = 1202
+
+                result shouldEqualTo expected
+            }
+        }
+
     }
 })
