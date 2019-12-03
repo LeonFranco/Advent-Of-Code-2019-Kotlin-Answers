@@ -14,7 +14,6 @@ class DisplayFormatter {
         fun subTitle(subTitle: String) {
             println(subTitle)
             repeatChar('-', subTitle.length)
-            println()
         } // subTitle
 
         fun answer(answer: Any) {
