@@ -12,8 +12,11 @@ class PuzzleTwoAnswer {
     }
 
     fun answer1(): Int {
-        val processed = processIntcodeProgram(gravityAssistProgram.toIntArray())
-        return processed[0]
+        val gravAssistProg = gravityAssistProgram.toIntArray()
+        gravAssistProg[1] = 12
+        gravAssistProg[2] = 2
+
+        return processIntcodeProgram(gravAssistProg)[0]
     }
 
     fun processIntcodeProgram(program: IntArray): IntArray {
