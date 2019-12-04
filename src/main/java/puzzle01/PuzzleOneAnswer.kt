@@ -1,4 +1,4 @@
-package puzzleOne
+package puzzle01
 
 import java.io.File
 import kotlin.math.floor
@@ -7,7 +7,7 @@ class PuzzleOneAnswer {
     private val moduleMasses = ArrayList<Int>()
 
     init {
-        File("src/main/java/puzzleOne/input.txt").forEachLine { moduleMasses.add(it.toInt()) }
+        File("src/main/java/puzzle01/input.txt").forEachLine { moduleMasses.add(it.toInt()) }
     }
 
     fun answer1(): Int {

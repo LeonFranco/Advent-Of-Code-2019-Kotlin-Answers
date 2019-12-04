@@ -1,4 +1,4 @@
-package puzzleOne
+package puzzle01
 
 import org.spekframework.spek2.Spek
 import org.amshove.kluent.*

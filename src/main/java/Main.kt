@@ -1,6 +1,6 @@
 import Util.DisplayFormatter
-import puzzleOne.PuzzleOneAnswer
-import puzzleTwo.PuzzleTwoAnswer
+import puzzle01.PuzzleOneAnswer
+import puzzle02.PuzzleTwoAnswer
 
 fun main() {
     val puzzleOneAnswer = PuzzleOneAnswer()

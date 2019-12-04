@@ -1,9 +1,8 @@
-package puzzleTwo
+package puzzle02
 
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 import org.amshove.kluent.*
-import kotlin.math.exp
 
 class PuzzleTwoAnswerTest : Spek({
     describe("Puzzle Two Answers") {

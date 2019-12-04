@@ -1,4 +1,4 @@
-package puzzleTwo
+package puzzle02
 
 import java.io.File
 import java.lang.Exception
@@ -8,7 +8,7 @@ class PuzzleTwoAnswer {
 
     init {
         @Suppress("NAME_SHADOWING")
-        File("src/main/java/puzzleTwo/input.txt").forEachLine { it.split(",").map { gravityAssistProgram.add(it.toInt()) } }
+        File("src/main/java/puzzle02/input.txt").forEachLine { it.split(",").map { gravityAssistProgram.add(it.toInt()) } }
     }
 
     fun answer2(): Int {
