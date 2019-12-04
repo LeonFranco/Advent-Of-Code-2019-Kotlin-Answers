@@ -9,13 +9,9 @@ class PuzzleThreeAnswer {
     private val wireOne = fileBuffer.readLine()
     private val wireTwo = fileBuffer.readLine()
 
-    fun answer1(): Int {
-        return calculateShortestManhattanDistance(wireOne, wireTwo)
-    }
+    fun answer1() = calculateShortestManhattanDistance(wireOne, wireTwo)
 
-    fun answer2(): Int {
-        return calculateLeastSteps(wireOne, wireTwo)
-    }
+    fun answer2()= calculateLeastSteps(wireOne, wireTwo)
 
     fun calculateLeastSteps(wireOne: String, wireTwo: String): Int {
         val wireOnePoints = convertDirectionsToPoints(wireOne.split(","))
