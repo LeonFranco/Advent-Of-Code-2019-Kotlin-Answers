@@ -2,6 +2,7 @@ import Util.DisplayFormatter
 import puzzle01.PuzzleOneAnswer
 import puzzle02.PuzzleTwoAnswer
 import puzzle03.PuzzleThreeAnswer
+import puzzle04.PuzzleFourAnswer
 
 fun main() {
     val puzzleOneAnswer = PuzzleOneAnswer()
@@ -29,4 +30,11 @@ fun main() {
     DisplayFormatter.answer(puzzleThreeAnswer.answer1())
     DisplayFormatter.subTitle("Part Two")
     DisplayFormatter.answer(puzzleThreeAnswer.answer2())
+
+
+    val puzzleFourAnswer = PuzzleFourAnswer()
+
+    DisplayFormatter.title("Puzzle four")
+    DisplayFormatter.subTitle("Part One")
+    DisplayFormatter.answer(puzzleFourAnswer.answer1())
 } // main
