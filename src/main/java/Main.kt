@@ -37,4 +37,6 @@ fun main() {
     DisplayFormatter.title("Puzzle four")
     DisplayFormatter.subTitle("Part One")
     DisplayFormatter.answer(puzzleFourAnswer.answer1())
+    DisplayFormatter.subTitle("Part Two")
+    DisplayFormatter.answer(puzzleFourAnswer.answer2())
 } // main

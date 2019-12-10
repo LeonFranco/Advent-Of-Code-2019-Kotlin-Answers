@@ -30,6 +30,29 @@ class PuzzleFourAnswerTest : Spek({
                 }
             }
         }
-    }
 
+        describe("Part Two Example") {
+            it("Should return the example answers") {
+                val exampleInputs = ArrayList<Int>()
+                val exampleAnswers = ArrayList<Boolean>()
+
+                exampleInputs.add(112233)
+                exampleAnswers.add(true)
+
+                exampleInputs.add(123444)
+                exampleAnswers.add(false)
+
+                exampleInputs.add(111122)
+                exampleAnswers.add(true)
+
+                for (i in exampleInputs.indices) {
+                    val result = puzzleFourAnswer.isPotentialPassword2(exampleInputs[i])
+                    val expected = exampleAnswers[i]
+
+                    result shouldEqual expected
+                }
+            }
+        }
+
+    }
 })
